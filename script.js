@@ -183,9 +183,11 @@ ${lista}
 
         document.getElementById("invitacion").style.display = "none";
 
-        document.getElementById("pantallaGracias").style.display = "flex";
+const pantalla = document.getElementById("pantallaGracias");
 
-        document.getElementById("pantallaGracias").style.opacity = "1";
+    pantalla.style.display = "flex";
+    pantalla.style.pointerEvents = "auto";
+    pantalla.style.opacity = "1";
 
     });
 
@@ -197,7 +199,10 @@ document
 
     e.preventDefault();
 
-document.getElementById("pantallaGracias").style.opacity = "0";
+const pantalla = document.getElementById("pantallaGracias");
+
+    pantalla.style.opacity = "0";
+    pantalla.style.pointerEvents = "none";  
 
 setTimeout(() => {
     document.getElementById("pantallaGracias").style.display = "none";
