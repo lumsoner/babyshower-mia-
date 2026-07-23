@@ -459,11 +459,11 @@ body{
     overflow:hidden;
     background:url("fondo-prueba.png") center/cover no-repeat;
     z-index:999;
-    display:flex;
     justify-content:center;
     align-items:center;
     opacity:0;
     transition:.4s;
+    pointer-events: none;
 }
 
 .gracias-card{
