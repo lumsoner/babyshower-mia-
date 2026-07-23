@@ -195,8 +195,6 @@ ${lista}
 
 }, 400);
 
-    });
-
 });
 
 document
@@ -204,8 +202,6 @@ document
 .addEventListener("click", (e) => {
 
     e.preventDefault();
-
-const pantalla = document.getElementById("pantallaGracias");
 
     pantalla.style.opacity = "0";
     pantalla.style.pointerEvents = "none";  
