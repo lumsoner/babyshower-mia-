@@ -181,13 +181,19 @@ ${lista}
 
     setTimeout(() => {
 
-        document.getElementById("invitacion").style.display = "none";
+    const invitacion = document.getElementById("invitacion");
+    const pantalla = document.getElementById("pantallaGracias");
 
-const pantalla = document.getElementById("pantallaGracias");
+    invitacion.style.display = "none";
 
     pantalla.style.display = "flex";
-    pantalla.style.pointerEvents = "auto";
-    pantalla.style.opacity = "1";
+
+
+    setTimeout(() => {
+        pantalla.style.opacity = "1";
+    }, 10);
+
+}, 400);
 
     });
 
@@ -204,11 +210,19 @@ const pantalla = document.getElementById("pantallaGracias");
     pantalla.style.opacity = "0";
     pantalla.style.pointerEvents = "none";  
 
-setTimeout(() => {
-    document.getElementById("pantallaGracias").style.display = "none";
+const pantalla = document.getElementById("pantallaGracias");
+const invitacion = document.getElementById("invitacion");
 
-    document.getElementById("invitacion").style.display = "block";
-    document.getElementById("invitacion").style.opacity = "1";
+pantalla.style.opacity = "0";
+
+setTimeout(() => {
+    pantalla.style.display = "none";
+
+    invitacion.style.display = "block";
+
+    setTimeout(() => {
+        invitacion.style.opacity = "1";
+    }, 10);
 
 }, 400);
 
