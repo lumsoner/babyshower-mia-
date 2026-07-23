@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>BabyShower Mia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="intro">
+        <video
+            id="videoIntro"
+            playsinline
+            preload="auto">
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+        <div class="glow-ring"></div>
+        <button id="btnAbrir"></button>
+        <div class="intro-flecha">↑</div>
+        <div class="intro-texto">
+            Haz clic para abrir la invitación
+        </div>
+    </div>
+    <section id="invitacion">
+        <img src="arriba.png" class="decoracion-arriba">
+        <div class="fondo-centro"></div>
+        <img src="abajo.png" class="decoracion-abajo">
+        <div class="contenido">
+            <div class="hero">
+            <img src="titulomia.png" alt="Baby Shower Mía" class="titulo-img">
+            </div>
+            <p class="frase">
+                Estoy muy feliz de que me acompañen
+                en este día tan especial.
+            </p>
+    <section class="seccion">
+        <div class="placa-fecha">
+            <div class="fecha-destacada">
+                02 DE AGOSTO
+            </div>
+            <div class="hora-destacada">
+                14:00 hs · 18:00 hs
+            </div>
+        </div>
+    </section>
+    <section class="seccion">
+        <div class="contador-marco">
+            <div class="tiempo">
+                <span id="dias">00</span>
+                <small>Días</small>
+            </div>
+            <div class="separador-tiempo"></div>
+            <div class="tiempo">
+                <span id="horas">00</span>
+                <small>Horas</small>
+            </div>
+            <div class="separador-tiempo"></div>
+            <div class="tiempo">
+                <span id="minutos">00</span>
+                <small>Minutos</small>
+            </div>
+        </div>
+        </section>
+        <section class="seccion">
+            <span class="titulo-dato">
+                TOMÁS ANTONIO VALLE 4627
+            </span>
+            <div class="botones-container">
+                <a
+                    href="https://maps.app.goo.gl/VK6juF7hvPQft5An9"
+                    target="_blank"
+                    class="btn">
+                    VER UBICACIÓN
+                </a>
+            </div>
+        </section>
+        <section class="seccion">
+            <span class="titulo-dato">
+                CONFIRMA TU ASISTENCIA
+            </span>
+            <div id="invitados">
+                <p>Indica los nombres de los invitados que asistirán a esta tarde.</p>
+                <div class="fila-invitado">
+                    <input
+                    type="text"
+                    class="input-invitado"
+                    placeholder="Nombre y apellido">
+                </div>
+            </div>
+            <div id="mensajeError"></div>
+            <button id="agregarInvitado">
+                + Agregar
+            </button>
+            <div class="botones-container">
+                <a
+                    id="btnConfirmar"
+                    href="#"
+                    class="btn-confirmar">
+                    CONFIRMAR ASISTENCIA
+                </a>
+            </div>
+        </section>
+    </div>
+        </section>
+        <section id="pantallaGracias">
+            <div class="gracias-card">
+                <h2>¡GRACIAS!</h2>
+                <p>
+                Tu confirmación fue recibida correctamente.
+                </p>
+                <p>
+                    Mía y su familia están muy felices de compartir
+                    este momento con vos.
+                </p>
+                <div class="fecha-final">
+                    02 DE AGOSTO · 14:00 HS
+                </div>
+                <div class="botones-container">
+                    <a
+                        id="volverInvitacion"
+                        href="#"
+                        class="btn-confirmar">
+                        VOLVER A LA INVITACIÓN
+                    </a>
+                </div>
+                </div>
+        </section>
+    <audio id="musica" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+<script src="script.js"></script>
+
+</body>
+</html>
