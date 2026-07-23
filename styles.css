@@ -463,7 +463,6 @@ body{
     align-items:center;
     opacity:0;
     transition:.4s;
-    pointer-events: none;
 }
 
 .gracias-card{
